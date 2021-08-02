@@ -54,6 +54,20 @@ def text_talk():
             print('システム：いいですね')
         elif msg1 == '体調が悪い': # ユーザーが体調不良のパターン
             print('システム：大丈夫ですか？')
+    elif msg == 'つかれた':
+        print('システム：なんでつかれているのですか？')
+        msg1 = input()
+        if msg1 == '仕事終わりだから':
+            print('システム：お仕事お疲れ様です')
+        else:
+            print('システム：お疲れ様です')
+            time.sleep(3)
+            print('システム：この後何されるんですか？')
+            msg2 = input()
+            if msg2 == '':
+                print('システム：そうなんですね')
+            else:
+                print('システム：そうなんですね')
     else:
         print('システム：何をしているんですか？') # ユーザーが何かをしていて物音を検知した時
         msg1 = input()
